@@ -26,7 +26,7 @@ h2{
   height: 100vh;
   position: relative;
   color: white ;
-  background: url('./images/pex3.jpg') no-repeat center center/cover;
+  background: url('./images/background.jpg') no-repeat center center/cover;
 }
 
 .search {
