@@ -20,6 +20,7 @@ h2{
   text-shadow: 0px 0px 5px #e4d6f1, 0px 0px 5px #e9def4, 0px 0px 5px #d8d6da,
     0px 0px 5px #d8cbe4;
 }
+
 .App{
   width: 100%;
   height: 100vh;
@@ -28,12 +29,12 @@ h2{
   background: url('./images/pex3.jpg') no-repeat center center/cover;
 }
 
-.App .search {
+.search {
   text-align: center;
   padding: 1rem;
 }
 
-.App input {
+input {
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
@@ -57,20 +58,19 @@ input:focus {
   margin: auto;
   padding: 0 1rem;
   position: relative;
-  top:5%;
+  top:1%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-around; 
 }
 
-.App .top {
+.top {
 width:100%;
 margin: 1rem auto;
 }
 
-.App .bottom {
+.bottom {
 display: flex;
-justify-content: space-evenly;
 text-align: center;
 width: 100%;
 margin: 1rem auto;
@@ -78,10 +78,13 @@ padding: 1rem;
 border-radius: 12px;
 background-color: #3c7da5;
 opacity: 0.7;
+text-shadow: 0px 0px 5px #e4d6f1, 0px 0px 10px #e9def4, 0px 0px 10px #d8d6da,
+0px 0px 20px #d8cbe4;
 }
 
 body {
   margin: 0;
+  height: 100vh;
   font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -89,7 +92,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@media only screen and (max-width: 375px) {
+  .container {
+  max-width: 500px;
+  height: 600px;
+  margin: auto;
+  }
+} 
